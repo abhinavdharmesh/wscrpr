@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>ok</title>
+
+</head>
+
+<body>
+
+    <h1 id="title"></h1>
+
+    <script>
+
+        function showTitle() {
+
+            // call the python script using fetch
+
+            fetch('gt.py')
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                // update the h1 tag with the title
+
+                document.getElementById("title").innerHTML = data;
+
+            })
+
+            .catch(error => console.error(error));
+
+        }
+
+        // call showTitle function on page load
+
+        window.onload = showTitle;
+
+    </script>
+
+</body>
+
+</html>
+
