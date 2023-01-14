@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Python Script Runner</title>
+
+</head>
+
+<body>
+
+    <button onclick="runScript()">Run Script</button>
+
+    <script>
+
+        function runScript() {
+
+            fetch('http://localhost:8000/gt.py')
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                console.log(data);
+
+            })
+
+            .catch(error => console.error(error));
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
