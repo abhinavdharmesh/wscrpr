@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 
 }
 
-$sql = "SHOW TABLES";
+$sql = "select * from time";
 
 $result = $conn->query($sql);
 
