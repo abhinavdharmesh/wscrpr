@@ -1,6 +1,10 @@
 import requests
 
 from bs4 import BeautifulSoup
+with open('log.txt', 'w') as f:
+
+    f.write(data)
+
 
 url = "https://www.abhinavdharmesh.live"
 
