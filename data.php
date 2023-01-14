@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 
 }
 
-$sql = "select * from time";
+$sql = "select * from 'time';";
 
 $result = $conn->query($sql);
 
